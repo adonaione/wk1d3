@@ -11,6 +11,19 @@ body {
 .grid-container {
     min-height: 200vh;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40vh 10vh;
+    grid-template-areas: 
+    "posts posts"
+    "pic info"
+    "nav nav";
+    row-gap: 3vh;
+}
+
+@media (min-width: 1000px) {
+.grid-container {
+    min-height: 200vh;
+    display: grid;
     grid-template-columns: 10vw 1fr 2fr 10vw;
     grid-template-rows: 10vh 40vh 1fr;
     grid-template-areas: 
@@ -18,7 +31,9 @@ body {
     ". pic info ."
     ". p p .";
     row-gap: 3vh;
+    }
 }
+
 
 .area-border {
     border: 2px solid black;
@@ -108,12 +123,13 @@ body {
 .post-links > a {
     color: black;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 5px;
+    padding: 2px;
     background-color: rgb(236, 141, 63);
 }
 
 .post-links > a:hover {
-    text-decoration: underline;
     font-size: larger;
+    color: aliceblue;
 }
