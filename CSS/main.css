@@ -110,6 +110,7 @@ body {
     text-decoration: none;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgb(236, 141, 63);
 }
 
 .post-links > a:hover {
