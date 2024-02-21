@@ -1,0 +1,34 @@
+body {
+    background-color: salmon;
+}
+
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 1fr 2fr 10vw;
+    grid-template-rows: 10vh 40vh 1fr;
+    grid-template-areas: 
+    "n n n n"
+    ". pic info ."
+    ". p p .";
+    row-gap: 3vh;
+}
+
+.area-border {
+    border: 2px solid black;
+}
+
+.nav {
+    grid-area: n;
+}
+.prof-pic {
+    grid-area: pic;
+}
+
+.prof-info {
+    grid-area: info;
+}
+.posts {
+    grid-area: p;
+}
